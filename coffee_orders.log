@@ -1,0 +1,18 @@
+2023-06-16 18:06:01 [main] INFO  coffee.order.CoffeeOrderBoard Order with NUMBER: [1] has been added to the name: Yoda
+2023-06-16 18:06:01 [main] INFO  coffee.order.CoffeeOrderBoard Order with NUMBER: [2] has been added to the name: Obi-Wan
+2023-06-16 18:06:01 [main] INFO  coffee.order.CoffeeOrderBoard Order with NUMBER: [3] has been added to the name: Vader
+2023-06-16 18:06:01 [main] INFO  coffee.order.CoffeeOrderBoard Order with NUMBER: [4] has been added to the name: Luke
+2023-06-16 18:06:01 [main] INFO  coffee.order.Main Num | Name
+1 | Yoda
+2 | Obi-Wan
+3 | Vader
+4 | Luke
+
+2023-06-16 18:06:01 [main] INFO  coffee.order.CoffeeOrderBoard Order with NUMBER: [1] has been placed to Yoda
+2023-06-16 18:06:01 [main] INFO  coffee.order.Main Num | Name
+2 | Obi-Wan
+3 | Vader
+4 | Luke
+
+2023-06-16 18:06:01 [main] INFO  coffee.order.CoffeeOrderBoard Received order number for delivery is: 3
+2023-06-16 18:06:01 [main] INFO  coffee.order.CoffeeOrderBoard Order with NUMBER: [3] has been placed to Vader
