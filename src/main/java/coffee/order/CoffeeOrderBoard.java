@@ -24,17 +24,15 @@ private static final Logger LOGGER = LoggerFactory.getLogger(CoffeeOrderBoard.cl
         maxOrderNum++;
     }
 
-    public Order deliver() {
+    public void deliver() {
         if (orderQueue.isEmpty()) {
             throw new OrderException("No orders in queue");
         }
         Order order = orderQueue.poll();
         LOGGER.info("Order with NUMBER: [" + order.getOrderNumber() + "] has been placed to " + order.getCustomerName());
-        return order;
-
     }
 
-    public Order deliver(final int orderNum) {
+    public void deliver(final int orderNum) {
         LOGGER.info("Received order number for delivery is: " + orderNum);
         if (orderNum < 0) {
             throw new OrderException("Order number must be above 0!");
@@ -45,7 +43,6 @@ private static final Logger LOGGER = LoggerFactory.getLogger(CoffeeOrderBoard.cl
                 .orElseThrow(() -> new OrderException("There is no order with such order number: " + orderNum));
         orderQueue.remove(order);
         LOGGER.info("Order with NUMBER: [" + order.getOrderNumber() + "] has been placed to " + order.getCustomerName());
-        return order;
     }
 
 
